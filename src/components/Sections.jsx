@@ -98,6 +98,23 @@ export function Products() {
           </article>
         ))}
       </div>
+      <div className="more-produce">
+        <h3 className="more-title reveal">{p.moreTitle}</h3>
+        <div className="more-cards">
+          {p.more.map((it, i) => (
+            <article className="product produce reveal" key={it.t}>
+              <div className="product-img">
+                <img src={[images.mango, images.potato][i]} alt={it.t} loading="lazy" />
+                <span className="tag">{it.tag}</span>
+              </div>
+              <div className="product-copy">
+                <h3>{it.t}</h3>
+                <p>{it.d}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
       <div className="specs reveal">
         <h3>{p.specsTitle}</h3>
         <dl>
@@ -201,6 +218,12 @@ export function Markets() {
             <p>{r.c}</p>
           </article>
         ))}
+      </div>
+      <div className="buyers reveal">
+        <h3>{m.deliverTitle}</h3>
+        <div className="chips">
+          {m.deliver.map((d) => <span className="chip deliver" key={d}>{d}</span>)}
+        </div>
       </div>
       <div className="buyers reveal">
         <h3>{m.buyersTitle}</h3>

@@ -65,7 +65,6 @@ export default function Contact() {
               {company.people.map((p) => (
                 <p key={p.key}><a href={`tel:+${p.intl}`}><bdi>{p.phone}</bdi></a> — {t.leadership.people[p.key].n}</p>
               ))}
-              <p><a href={company.landlineHref}><bdi>{company.landline}</bdi></a> — {c.officeLabel}</p>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { useLang } from '../LangContext';
 import { gallery } from '../data';
 import { CloseIcon } from './Icons';
 
-const CATS = ['all', 'factory', 'processing', 'packing', 'storage'];
+const CATS = ['all', 'factory', 'processing', 'packing', 'storage', 'produce'];
 
 export default function Gallery() {
   const { t, lang } = useLang();

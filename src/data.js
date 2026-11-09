@@ -2,8 +2,6 @@
 // and email screenshots supplied by the client. Edit here to update the site.
 export const company = {
   emails: ['tajcitrus@gmail.com', 'taj_citrus@yahoo.com'],
-  landline: '+92-48-6892401-402',
-  landlineHref: 'tel:+92486892401',
   mapQuery: 'Kot Momin Road, Lalliani, Sargodha, Pakistan',
   people: [
     { key: 'ceo', phone: '0300-8607490', intl: '923008607490' },
@@ -34,6 +32,9 @@ export const images = {
   readyToShip: img('ready-to-ship.jpg'),
   coldInside: img('cold-store-inside.jpg'),
   coldSign: img('cold-storage-sign.jpg'),
+  mango: img('mango.jpg'),
+  potato: img('potatoes.jpg'),
+  potatoSingle: img('potato.jpg'),
 };
 
 export const gallery = [
@@ -53,4 +54,7 @@ export const gallery = [
   { src: images.readyToShip, cat: 'packing', key: 'g14' },
   { src: images.coldInside, cat: 'storage', key: 'g15' },
   { src: images.compressors, cat: 'storage', key: 'g16' },
+  { src: images.mango, cat: 'produce', key: 'g18' },
+  { src: images.potato, cat: 'produce', key: 'g19' },
+  { src: images.potatoSingle, cat: 'produce', key: 'g20' },
 ];

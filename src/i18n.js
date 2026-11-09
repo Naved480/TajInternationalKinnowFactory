@@ -46,6 +46,11 @@ export const translations = {
         { t: 'Graded by Size (Count)', d: 'Fruit is size-graded mechanically and packed by count — for example 42, 54 or 72 pieces per 10 kg carton. Other counts on request.', tag: 'Count 42 · 54 · 72' },
         { t: 'Private-Label Packing', d: 'We pack in the importer’s own printed cartons, with their brand, address and count marking.', tag: 'Your Brand' },
       ],
+      moreTitle: 'We Also Supply',
+      more: [
+        { t: 'Fresh Mango', d: 'Sweet, aromatic Pakistani mangoes sourced from Multan — the City of Mangoes — packed for local and export markets in season.', tag: 'From Multan' },
+        { t: 'Fresh Potato', d: 'Quality table potatoes sourced from Deepalpur, one of Punjab’s leading potato-growing areas, supplied in bulk to buyers’ requirements.', tag: 'From Deepalpur' },
+      ],
       specsTitle: 'Product Specifications',
       specs: [
         ['Product', 'Fresh Kinnow Mandarin (Citrus reticulata)'],
@@ -101,13 +106,15 @@ export const translations = {
     markets: {
       kicker: 'Export Markets',
       title: 'Serving Buyers Across the Region',
-      lead: 'Pakistani Kinnow is in demand across the Middle East, Asia and beyond. We welcome enquiries from importers, wholesalers, distributors and supermarket buyers in these markets and others.',
+      lead: 'We deliver Kinnow, Mango and Potato to buyers across the Gulf, the Middle East, Central Asia and South & South-East Asia. We welcome enquiries from importers, wholesalers, distributors and supermarket buyers in these markets and others.',
       regions: [
-        { t: 'Gulf & Middle East', c: 'Saudi Arabia · UAE · Oman · Qatar · Kuwait · Bahrain' },
-        { t: 'Central Asia & Russia', c: 'Russia · Afghanistan · Central Asian states' },
-        { t: 'South & South-East Asia', c: 'Sri Lanka · Indonesia · Malaysia · Philippines · Singapore' },
-        { t: 'Other Destinations', c: 'Europe, Africa and other markets on enquiry' },
+        { t: 'Gulf States', c: 'UAE (Dubai) · Saudi Arabia · Oman (Muscat) · Qatar · Kuwait · Bahrain' },
+        { t: 'Middle East & Central Asia', c: 'Iraq · Uzbekistan' },
+        { t: 'South & South-East Asia', c: 'Sri Lanka (Colombo) · Indonesia' },
+        { t: 'Other Destinations', c: 'New markets welcome on enquiry' },
       ],
+      deliverTitle: 'What We Deliver',
+      deliver: ['🍊 Kinnow', '🥭 Mango', '🥔 Potato'],
       buyersTitle: 'Who We Work With',
       buyers: ['Importers', 'Wholesalers', 'Distributors', 'Supermarket chains', 'Fresh-produce traders'],
     },
@@ -125,7 +132,7 @@ export const translations = {
     gallery: {
       kicker: 'Gallery',
       title: 'Inside Taj International',
-      filters: { all: 'All', factory: 'Factory', processing: 'Processing', packing: 'Packing', storage: 'Cold Storage' },
+      filters: { all: 'All', factory: 'Factory', processing: 'Processing', packing: 'Packing', storage: 'Cold Storage', produce: 'Mango & Potato' },
       captions: {
         g1: 'Factory name board', g2: 'Factory building', g3: 'Office block', g4: 'Loading bays',
         g5: 'Roadside signboard, Kot Momin Road', g6: 'Sorting line', g7: 'Washing & waxing machine',
@@ -133,6 +140,7 @@ export const translations = {
         g11: 'Packed cartons with TAJ tissue wrap', g12: 'Cartons being packed', g13: 'TAJ Kinnow Mandarin cartons',
         g14: 'Strapped cartons ready to ship', g15: 'Inside our cold storage', g16: 'Cold storage refrigeration units',
         g17: 'Cold storage entrance',
+        g18: 'Fresh mangoes from Multan', g19: 'Potatoes from Deepalpur', g20: 'Fresh table potato',
       },
     },
     cta: {
@@ -148,7 +156,6 @@ export const translations = {
       address: ['½ KM Kot Momin Road, Lalliani,', 'District Sargodha, Punjab, Pakistan'],
       emailLabel: 'Email',
       phoneLabel: 'Phone',
-      officeLabel: 'Office',
       formTitle: 'Request a Quotation',
       form: {
         name: 'Your name', company: 'Company', country: 'Country', email: 'Email', phone: 'Phone / WhatsApp',
@@ -215,6 +222,11 @@ export const translations = {
         { t: 'مفروز حسب الحجم (العدد)', d: 'تُفرز الثمار آلياً حسب الحجم وتُعبأ حسب العدد — مثل 42 أو 54 أو 72 حبة في كرتونة 10 كغ. أعداد أخرى حسب الطلب.', tag: 'عدد 42 · 54 · 72' },
         { t: 'تعبئة بعلامة المشتري', d: 'نعبئ في كراتين المستورد المطبوعة بعلامته التجارية وعنوانه وعدد الحبات.', tag: 'علامتكم' },
       ],
+      moreTitle: 'نوفر أيضاً',
+      more: [
+        { t: 'مانجو طازجة', d: 'مانجو باكستانية حلوة وعطرية من ملتان — مدينة المانجو — تُعبأ للأسواق المحلية والتصدير في موسمها.', tag: 'من ملتان' },
+        { t: 'بطاطس طازجة', d: 'بطاطس مائدة عالية الجودة من ديبالبور، إحدى أهم مناطق زراعة البطاطس في البنجاب، نوردها بكميات كبيرة حسب متطلبات المشتري.', tag: 'من ديبالبور' },
+      ],
       specsTitle: 'مواصفات المنتج',
       specs: [
         ['المنتج', 'كينو يوسفي طازج (Citrus reticulata)'],
@@ -270,13 +282,15 @@ export const translations = {
     markets: {
       kicker: 'أسواق التصدير',
       title: 'نخدم المشترين في المنطقة وخارجها',
-      lead: 'الكينو الباكستاني مطلوب في الشرق الأوسط وآسيا وغيرها. نرحب باستفسارات المستوردين وتجار الجملة والموزعين ومشتري السوبرماركت في هذه الأسواق وغيرها.',
+      lead: 'نوصل الكينو والمانجو والبطاطس إلى المشترين في الخليج والشرق الأوسط وآسيا الوسطى وجنوب وجنوب شرق آسيا. نرحب باستفسارات المستوردين وتجار الجملة والموزعين ومشتري السوبرماركت في هذه الأسواق وغيرها.',
       regions: [
-        { t: 'الخليج والشرق الأوسط', c: 'السعودية · الإمارات · عُمان · قطر · الكويت · البحرين' },
-        { t: 'آسيا الوسطى وروسيا', c: 'روسيا · أفغانستان · دول آسيا الوسطى' },
-        { t: 'جنوب وجنوب شرق آسيا', c: 'سريلانكا · إندونيسيا · ماليزيا · الفلبين · سنغافورة' },
-        { t: 'وجهات أخرى', c: 'أوروبا وأفريقيا وأسواق أخرى عند الاستفسار' },
+        { t: 'دول الخليج', c: 'الإمارات (دبي) · السعودية · عُمان (مسقط) · قطر · الكويت · البحرين' },
+        { t: 'الشرق الأوسط وآسيا الوسطى', c: 'العراق · أوزبكستان' },
+        { t: 'جنوب وجنوب شرق آسيا', c: 'سريلانكا (كولومبو) · إندونيسيا' },
+        { t: 'وجهات أخرى', c: 'نرحب بالأسواق الجديدة عند الاستفسار' },
       ],
+      deliverTitle: 'ما نوصله',
+      deliver: ['🍊 الكينو', '🥭 المانجو', '🥔 البطاطس'],
       buyersTitle: 'نتعامل مع',
       buyers: ['المستوردين', 'تجار الجملة', 'الموزعين', 'سلاسل السوبرماركت', 'تجار المنتجات الطازجة'],
     },
@@ -294,7 +308,7 @@ export const translations = {
     gallery: {
       kicker: 'معرض الصور',
       title: 'داخل تاج إنترناشونال',
-      filters: { all: 'الكل', factory: 'المصنع', processing: 'المعالجة', packing: 'التعبئة', storage: 'التبريد' },
+      filters: { all: 'الكل', factory: 'المصنع', processing: 'المعالجة', packing: 'التعبئة', storage: 'التبريد', produce: 'المانجو والبطاطس' },
       captions: {
         g1: 'لوحة اسم المصنع', g2: 'مبنى المصنع', g3: 'مبنى الإدارة', g4: 'أرصفة التحميل',
         g5: 'لوحة الطريق، طريق كوت مومن', g6: 'خط الفرز', g7: 'آلة الغسيل والتشميع',
@@ -302,6 +316,7 @@ export const translations = {
         g11: 'كراتين معبأة مع ورق تغليف TAJ', g12: 'تعبئة الكراتين', g13: 'كراتين TAJ Kinnow Mandarin',
         g14: 'كراتين مربوطة جاهزة للشحن', g15: 'داخل غرف التبريد', g16: 'وحدات التبريد',
         g17: 'مدخل غرف التبريد',
+        g18: 'مانجو طازجة من ملتان', g19: 'بطاطس من ديبالبور', g20: 'بطاطس مائدة طازجة',
       },
     },
     cta: {
@@ -317,7 +332,6 @@ export const translations = {
       address: ['نصف كيلومتر طريق كوت مومن، لالياني،', 'محافظة سرغودها، البنجاب، باكستان'],
       emailLabel: 'البريد الإلكتروني',
       phoneLabel: 'الهاتف',
-      officeLabel: 'المكتب',
       formTitle: 'اطلب عرض سعر',
       form: {
         name: 'الاسم', company: 'الشركة', country: 'الدولة', email: 'البريد الإلكتروني', phone: 'الهاتف / واتساب',

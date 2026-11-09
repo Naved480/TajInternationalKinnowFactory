@@ -111,6 +111,11 @@ html[dir='rtl'] .hero::before { background: linear-gradient(270deg, rgba(7, 35, 
 .product-copy { padding: 24px; }
 .product h3 { color: var(--forest); margin: 0 0 9px; font-size: 18px; }
 .product p { font-size: 14px; color: var(--muted); line-height: 1.8; margin: 0; }
+.more-produce { margin-top: 56px; }
+.more-title { text-align: center; color: var(--forest); font-size: 22px; margin: 0 0 24px; }
+.more-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+.produce img { height: 260px; }
+@media (max-width: 640px) { .more-cards { grid-template-columns: 1fr; } }
 .specs { margin: 46px auto 0; max-width: 900px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 34px; }
 .specs h3 { margin: 0 0 14px; color: var(--forest); font-size: 20px; }
 .specs dl { margin: 0; }
@@ -292,3 +297,4 @@ html[dir='rtl'] .role { letter-spacing: 0; font-size: 13px; }
   .lb-nav { width: 40px; height: 40px; font-size: 24px; top: auto; bottom: 20px; transform: none; }
   .wa-float { width: 52px; height: 52px; bottom: 16px; inset-inline-end: 16px; }
 }
+.chip.deliver { background: var(--orange); color: #fff; border-color: var(--orange); font-weight: 700; }
